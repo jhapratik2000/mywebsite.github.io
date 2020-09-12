@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Portfolio@Anant</title>
+<link rel="stylesheet" href="MyWebsite.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="font-family:Verdana;color:#aaaaaa;">
+
+    <section class="background">
+        <video autoplay loop class="video-background" muted plays-inline>
+            <source src="https://static.videezy.com/system/resources/previews/000/042/158/original/1.mp4" type="video/mp4">
+        </video>
+
+        <div class="header">
+            <marquee width="70%" direction="left" height=auto;>
+                <h2>Welcome to the techy world!</h2>
+            </marquee>
+          </div>
+          
+          <div class="topnav" id="myTopnav">
+              <a href="Homepage.html">Home</a>
+              <a href="Blog.html">Blog</a>
+              <a href="#" style="color:whitesmoke;background-color: rgb(77, 14, 14);">Portfolio</a>
+              <a style="float: right;" href="https://gqs87vfph7rk90tmbbcwia-on.drv.tw/www.anant.ml/anant_info.html">Contact</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+              </a>  
+          </div>
+          
+          <div style="overflow:auto;border-radius: 5px;background-color: cyan;">
+            <div class="main">
+              <div class="cardview">
+                  <h2 style="text-align: center;font-family: serif; color: cyan ;">My Projects</h2>
+                  <div class="gallery">
+                    <img src="Website.jpg" alt="screenshot">
+                    <p>A responsive website using HTML and CSS</p>
+                  </div>
+                      <div class="gallery">
+                        <img src="Demo Application.jpg" alt="Screenshot">
+                        <p>An android application to store and update data with authentication</p>
+                      </div>
+                      <div class="gallery">
+                          <img src="TicTacToe.jpg" alt="Screenshot">
+                          <p style="padding: 5px;">Local two players TicTacToe game android application</p>
+                      </div>
+                      
+                      
+              </div>
+            </div>
+            <div class="right">
+              <div class="cardview">
+                  <h2 style="text-align: center;font-family: serif; color: cyan ;">About me</h2>
+                      <div id="mypic">
+                          <img src="Anant.jpg" alt="Happy">
+                          <p style="text-align: center;font-size: 15px;padding: 15px;">
+                            Anant Bharti<br>
+                            B.Tech (2nd Year Electrical Engineering)<br> National Institute of Technology<br>
+                            Jamshedpur, Jharkhand
+                          </p>
+                      </div>
+              </div>
+              
+            </div>
+          </div>
+          
+          <div class="footer">
+            <p>This is a test website developed as a portfolio as well as blogging purpose. Do give your feedback via email to the developer. Suggestions are highly welcomed.</p>
+            <p>Designed and developed by 
+                <a href="https://gqs87vfph7rk90tmbbcwia-on.drv.tw/www.anant.ml/anant_info.html" target="__blank" style="color: violet;" >Anant Bharti</a>
+            </p>
+            <div style="margin: auto;overflow: auto;padding: 5px;">
+              <a href="https://www.facebook.com/anant.bharti.940" target="__blank" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-linkedin" target="__blank" ></a>
+              <a href="https://www.instagram.com/anantbharti_happy/?hl=en" class="fa fa-instagram" target="__blank"></a>
+              <a href="#" class="fa fa-twitter" target="__blank"></a>
+            </div>
+    </div>
+    </section>
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+</script>
+</body>
+</html>

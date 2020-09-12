@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+  box-sizing: border-box;
+}
+.header {
+    border-radius: 5px;
+    padding: 20px;
+    text-align:center;
+    width: auto;
+    color:cyan;
+    background: transparent;
+}
+.topnav {
+                border-radius: 5px;
+                position: sticky;
+                top:0;
+                overflow: hidden;
+                background-color:rgb(27, 27, 27);
+            }
+            .topnav a {
+                display: block;
+                float: left;
+                color:violet;
+                text-align: center;
+                padding: 13px 27px;
+                text-decoration: none;
+            }
+            .topnav a:hover {
+                color:white;
+                background-color:black;
+                text-decoration: wavy;
+            }
+            .topnav a:active {
+                color: whitesmoke;background-color: rgb(77, 14, 14);
+            }
+            .topnav .icon {
+                display: none;
+            }
+.main {
+  float:left;
+  width:70%;
+  padding:0 10px;
+}
+.right {
+  float:left;
+  width:30%;
+  padding:0 10px;
+  text-align:center;
+}
+@media screen and (max-width: 600px) {
+                .topnav a:not(:first-child) {display: none;}
+                .topnav a.icon {
+                 float: right;
+                 display: block;
+                }
+                .leftcol, .rightcol {   
+                   width: 100%;
+                   padding: 0;
+                }
+                .topnav.responsive {position: relative;}
+                 .topnav.responsive .icon {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+               .topnav.responsive a {
+                  float: none;
+                  display: block;
+                  text-align: left;
+                }
+            }
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+   .main, .right  {
+    width:100%;
+  }
+}
+.cardview {
+                overflow: auto;
+                border-radius: 5px;
+                color:blanchedalmond;
+                background-color: #4b0f0f;
+                padding: 20px;
+                margin-top: 10px;
+                margin-bottom: 5px;
+            }
+            .gallery {
+                border:solid cyan thin;
+                border-radius: 5px;
+                margin: 2px;
+                width:32%;
+                padding: 8px;
+                display: block;
+                height: auto;
+                overflow: auto;
+                float: left;
+                text-align: center;
+                font-size: 12px;
+            }
+            @media only screen and (max-width:500px) {
+                .gallery {
+                    width: 98%;
+                }
+            }
+            @media only screen and (max-width:700px) {
+                .gallery {
+                    width: 48%;
+                }
+            }
+             img {
+                padding: 3px;
+                width:100%;
+                margin: auto;
+                display: block;
+                height: auto;
+                overflow: auto;
+            }
+            .footer {
+                padding: 20px 30px;
+                overflow: hidden;
+                font-size: 12px;
+                margin: auto;
+                text-align: center;
+                color: blanchedalmond;
+                border-radius: 5px;
+                background-color: rgb(26, 25, 25);
+            }
+            .background {
+                height: 100vh;
+            }
+            .video-background {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                min-width: 100%;
+                min-height: 100%;
+                width: auto;
+                height: auto;
+                z-index: -1;
+            }
+            @media (min-aspect-ratio:16/9)
+            {
+                .video-background{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            @media (max-aspect-ratio:16/9)
+            {
+                .video-background{
+                    width: auto;
+                    height: 100%;
+                }
+            }
+            #mypic {
+                width: 98%;
+                padding: 5%;
+                height: auto;
+                overflow: auto;
+            }
+            
+            .image {
+                border: dashed thin cyan;
+                padding: 8px;
+                display: block;
+                width: 100%;
+                height: auto;
+                text-align: center;
+                font-family: cursive;
+                color: whitesmoke;
+                overflow: auto;
+                font-size: 11px;
+            }
+            .image img {
+                margin-bottom: 10px;
+                overflow: auto;
+            }
+
+            .posts {
+                overflow-x: hidden;
+                overflow-y: scroll;
+                border-radius: 5px;
+                color:blanchedalmond;
+                background-color: #4b0f0f;
+                padding: 20px;
+                margin-top: 10px;
+                margin-bottom: 5px;
+                width: 100%;
+                height: 100vh;
+            }
+            .articles {
+                border: solid thin cyan;
+                color: whitesmoke;
+                font-family: cursive;
+                font-size: small;
+                display: block;
+                width: 100%;
+                height: auto;
+                overflow: auto;
+                padding: 15px;
+                margin-top: 10px;
+                margin-bottom: 15px;
+            }
+            .fa {
+                padding: 20px;
+                font-size: 30px;
+                width: 30px;
+                text-align: center;
+                text-decoration: none;
+                margin: 5px 2px;
+                border-radius: 50%;
+              }
+              
+              .fa:hover {
+                  opacity: 0.7;
+              }
+              .fa-facebook {
+                background: #3B5998;
+                color: white;
+              }
+              .fa-linkedin {
+                background: #007bb5;
+                color: white;
+              }
+              .fa-instagram {
+                background: #125688;
+                color: white;
+              }
+              .fa-twitter {
+                background: #55ACEE;
+                color: white;
+              }
+            #foot {
+                width: 100%;
+                height: auto;
+                position: fixed;bottom: 2px;
+            }
